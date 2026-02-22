@@ -14,7 +14,7 @@ sudo dnf remove docker \
                   docker-latest-logrotate \
                   docker-logrotate \
                   docker-selinux \
-                  dockesudo systemctl enable --now dockerr-engine-selinux \
+                  docker-engine-selinux \
                   docker-engine
 ```
 ## Installation Docker officiel 

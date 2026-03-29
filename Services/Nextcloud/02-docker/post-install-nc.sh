@@ -65,6 +65,8 @@ docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set overwritepr
 log_info "Configuration Locale (FR) & Maintenance..."
 docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set default_phone_region --value="FR"
 docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set maintenance_window_start --type=integer --value=2
+docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set twofactor_enforced --value="true"
+docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set serverid --value="server-1"
 
 # 4. URL Publique (à décommenter si DOMAIN_URL est utilisé)
 # log_info "Définition de l'URL publique : ${DOMAIN_URL}"

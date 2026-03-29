@@ -185,6 +185,7 @@ systemctl enable --now nextcloud-cron.timer
   'maintenance_window_duration' => 7200,
   'default_phone_region' => 'FR',
   'twofactor_enforced' => 'true',
+  'serverid' => 'serveur-1',
 ```
 ## Commandes Utiles
 ### Commande de réparations et de vérifications

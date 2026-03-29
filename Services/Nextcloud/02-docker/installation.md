@@ -39,6 +39,7 @@ docker compose exec app php occ config:system:set overwriteprotocol --value="htt
 docker compose exec app php occ config:system:set default_phone_region --value="FR"
 docker compose exec app php occ config:system:set maintenance_window_start --type=integer --value=2
 docker compose exec app php occ config:system:set twofactor_enforced --value="true"
+docker compose exec app php occ config:system:set serverid --value="server-1"
 ```
 
 ### Domaine (Optionnel)

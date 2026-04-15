@@ -1,5 +1,5 @@
 # Base de connaissance Infrastructure & Automatisation
-> Bienvenue sur ma base de connaissance technique. Ce dépôt centralise mes procédures d'infrastructure, mes scripts d'automatisation et mes notes de déploiement issues de situations réelles.
+> Ce dépôt centralise mes procédures d'infrastructure, mes scripts d'automatisation et mes notes de déploiement issues de situations réelles.
 
 ## 🛠️ Environnement Technique
 

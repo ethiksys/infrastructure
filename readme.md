@@ -1,7 +1,5 @@
 # Base de connaissance Infrastructure & Automatisation
-> **Michaël B.** - Ingénieur Infrastructure & SRE | Passionné Libre et Open Source
-
-Bienvenue sur ma base de connaissance technique. Ce dépôt centralise mes procédures d'infrastructure, mes scripts d'automatisation et mes notes de déploiement issues de situations réelles en production et en laboratoire.
+> Bienvenue sur ma base de connaissance technique. Ce dépôt centralise mes procédures d'infrastructure, mes scripts d'automatisation et mes notes de déploiement issues de situations réelles.
 
 ## 🛠️ Environnement Technique
 
@@ -14,7 +12,7 @@ Bienvenue sur ma base de connaissance technique. Ce dépôt centralise mes proc�
 
 ## 🏗️ Virtualisation & Gestion du cycle de vie (MCO)
 
-- [**Proxmox**](Proxmox/readme.md) : Gestion de clusters ProxmoxVE et plans de reprise d'activité avec Proxmox Backup Server. 
+- [**Proxmox**](Proxmox/readme.md) : Gestion de clusters Proxmox VE et plans de reprise d'activité avec Proxmox Backup Server. 
 
 - [**Docker**](Docker/readme.md) : Gestion de solutions de containerisation
 

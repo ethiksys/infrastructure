@@ -44,8 +44,8 @@ Hardening système et gestion des flux.
   - [Wazuh SIEM/XDR](Securite/Wazuh.md)
 - **Gestion et Supervision**: 
   - [Zabbix LTS](Supervision/ZabbixLTS.md)
-  - [GLPI](Supervision/GLPI.md) : Gestionnaire de Parc
   - [Supervision Multi-services](Supervision/Monitoring&Alertes.md)
+  - [GLPI](Supervision/GLPI.md) : Gestionnaire de Parc
 
 ## 📦 Services Auto-hébergés
 Déploiement et gestion de solutions autohébergés.

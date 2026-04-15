@@ -54,9 +54,11 @@ Déploiement et gestion de solutions autohébergés.
 - Gestion de base de données : [PostgreSQL](Services/Base_de_données/PostgreSQL.md), [MariaDB](Services/Base_de_données/MariaDB.md), [Redis](Services/Base_de_données/Redis.md)
 - Serveur de mots de passe : [Passbolt](Services/Passbolt.md)
 
-- **IA locale & Hardware Passthrough**
-  - [Virtualisation GPU pour OpenWebUI (PCI Passthrough)](IA/OpenWebUI-serverGPU.md)
-  - [Installation d'Ollama (Linux/Windows)](IA/Ollama.md)
+## 🧠 IA locale & Hardware Passthrough**
+Déploiement de solution d'IA locale
+
+- [Virtualisation GPU pour OpenWebUI (PCI Passthrough)](IA/OpenWebUI-serverGPU.md)
+- [Installation d'Ollama (Linux/Windows)](IA/Ollama.md)
  
 ---
 ![Dernière mise à jour](https://img.shields.io/github/last-commit/ethiksys/infrastructure)

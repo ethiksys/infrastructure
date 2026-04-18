@@ -49,6 +49,8 @@ services:
     depends_on:
       - db
       - redis
+    env_file:
+      - nc.env
     extra_hosts:
       - "$NEXTCLOUD_URL:$HOST_IP"
     networks:

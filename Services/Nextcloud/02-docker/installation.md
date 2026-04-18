@@ -44,5 +44,6 @@ docker compose exec app php occ config:system:set serverid --value="server-1"
 
 ### Domaine (Optionnel)
 ```bash
+docker compose exec app php occ config:system:set trusted_domains 1 --value="cloud.mon-domaine.fr"
 docker compose exec app php occ config:system:set overwrite.cli.url --value="https://cloud.mon-domaine.fr"
 ```

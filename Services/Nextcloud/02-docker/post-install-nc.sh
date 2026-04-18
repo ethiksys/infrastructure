@@ -16,7 +16,8 @@ set -o nounset  # Quitter si variable non définie
 # --- Variables ---
 CONTAINER_NAME="app" # Nom dans docker-compose
 # À adapter et décommenter
-# DOMAIN_URL="https://cloud.mon-domaine.fr" 
+# DOMAIN_URL="cloud.mon-domaine.fr" 
+
 # --- Fonctions ---
 log_info() { echo -e "\033[0;32m[INFO]\033[0m $1"; }
 log_warn() { echo -e "\033[0;33m[WARN]\033[0m $1"; }
@@ -30,7 +31,7 @@ check_container() {
 
 wait_for_nextcloud() {
     log_info "Vérification de la disponibilité de Nextcloud..."
-    # On boucle tant que 'occ status' ne renvoie pas un succès (installed: true)
+    # Boucle tant que 'occ status' ne renvoie pas un succès (installed: true)
     until docker compose exec -T "${CONTAINER_NAME}" php occ status &>/dev/null; do
         echo -n "."
         sleep 5
@@ -70,6 +71,7 @@ docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set serverid --
 
 # 4. URL Publique (à décommenter si DOMAIN_URL est utilisé)
 # log_info "Définition de l'URL publique : ${DOMAIN_URL}"
-# docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set overwrite.cli.url --value="${DOMAIN_URL}"
+# docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set trusted_domains 1 --value="${DOMAIN_URL}"
+# docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set overwrite.cli.url --value="https://${DOMAIN_URL}"
 
 log_info "Terminé avec succès !"

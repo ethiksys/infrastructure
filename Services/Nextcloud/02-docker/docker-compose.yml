@@ -49,8 +49,8 @@ services:
     depends_on:
       - db
       - redis
-    env_file:
-      - nc.env
+    extra_hosts:
+      - "$NEXTCLOUD_URL:$HOST_IP"
     networks:
       - nc-interne
 
@@ -66,10 +66,10 @@ services:
       - nc-interne
     labels:
       - "traefik.enable=true"
-      # Remplacer 'localhost' par votre domaine local si besoin (ex: nc.local)
-#      - "traefik.http.routers.nextcloud.rule=Host(`localhost`) || Host(`nextcloud.local`)"      
+      #  Modifier le .env par votre domaine local si besoin (ex: nc.local)
+      - "traefik.http.routers.nextcloud.rule=Host(`$NEXTCLOUD_URL`)"      
       # Règle pour tester en local (accepte n'importe quelle IP ou domaine)
-      - "traefik.http.routers.nextcloud.rule=HostRegexp(`^.+$`)"
+#      - "traefik.http.routers.nextcloud.rule=HostRegexp(`^.+$`)"
       - "traefik.http.routers.nextcloud.entrypoints=websecure"
       - "traefik.http.routers.nextcloud.tls=true"
       - "traefik.http.services.nextcloud.loadbalancer.server.port=80"
@@ -83,6 +83,8 @@ services:
     depends_on:
       - db
       - redis
+    extra_hosts:
+      - "$NEXTCLOUD_URL:$HOST_IP"
     networks:
       - nc-interne
 

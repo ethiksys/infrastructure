@@ -73,5 +73,6 @@ docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set serverid --
 # log_info "Définition de l'URL publique : ${DOMAIN_URL}"
 # docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set trusted_domains 1 --value="${DOMAIN_URL}"
 # docker compose exec -T "${CONTAINER_NAME}" php occ config:system:set overwrite.cli.url --value="https://${DOMAIN_URL}"
+# docker compose exec -T -T "${CONTAINER_NAME}" php occ config:system:set allow_local_remote_servers --value=true --type=boolean
 
 log_info "Terminé avec succès !"

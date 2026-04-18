@@ -4,6 +4,7 @@
 ```text
 nextcloud-stack/
 ├── docker-compose.yml       # Orchestrateur
+├── .env.example             # Copier en .env et personnaliser
 ├── nc.env                   # Secrets à personnaliser (MySQL)
 └── web/
     └── nginx.conf           # Config Nginx

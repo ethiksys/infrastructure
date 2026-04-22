@@ -19,7 +19,7 @@ services:
       - nc-interne
 
   db:
-    image: mariadb:11.8-ubi
+    image: mariadb:11.8
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     restart: always
     volumes:

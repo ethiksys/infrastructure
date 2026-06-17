@@ -59,15 +59,12 @@ services:
     restart: unless-stopped
     ports:
       - "11434:11434"
+    gpus: all
     volumes:
       - ollama:/root/.ollama
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
 
   open-webui:
     image: ghcr.io/open-webui/open-webui:main

@@ -25,6 +25,7 @@ Plateforme de virtualisation open-source qui permet de gérer des machines virtu
 - Maintenance ou procédures diverses :
   - [Migration du VM virtualbox vers Proxmox](Virtual_Environment/MigrationOVA.md)
   - [Gestion avancée LXC](Virtual_Environment/Gestion_LXC.md)
+  - [Migration des clés CephX de `aes` vers `aes256k`](Virtual_Environment/MigrationCephxKeys.md)
 
 ## **Proxmox Backup Server (PBS)** : 
 

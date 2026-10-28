@@ -10,7 +10,7 @@ projet_terraform/
     └── user_data.yaml  # Fichier de configuration
 ```
 ---
-## Creer une paire de [clés SSH dédiée](../../SSH/Gestionclessh.md) et copier la clé publique sur l'hyperviseur. Le provider nécessite un acces SSH root pour charger les snippets cloud-init
+## Creer une paire de [clés SSH dédiée](../../SSH/Gestionclessh.md) et copier la clé publique sur l'hyperviseur. Le provider nécessite un acces SSH admin pour charger les snippets cloud-init
 
 ## main.tf - Fichier de configuration principal de Terraform
 

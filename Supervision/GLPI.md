@@ -1,4 +1,4 @@
-# GLPI - Installation Sécurisée & Mise à jour
+# GLPI 11 - Installation Sécurisée & Mise à jour
 ## Installation
 ### Socle LAMP (Mode FPM) et Dépendances requises par GLPI
 ```bash
@@ -11,7 +11,7 @@ sudo apt install -y apache2 mariadb-server php-fpm \
 
 # Activation du mode FPM sur Apache
 sudo a2enmod proxy_fcgi setenvif rewrite headers
-sudo a2enconf php8.2-fpm
+sudo a2enconf php8.3-fpm
 sudo systemctl restart apache2
 ```
 ### Création BDD et Utilisateur
@@ -29,8 +29,8 @@ EOF
 ```bash
 cd /tmp
 # Télécharger la dernière version stable
-wget https://github.com/glpi-project/glpi/releases/download/10.0.16/glpi-10.0.16.tgz
-sudo tar -xzvf glpi-10.0.16.tgz -C /var/www/
+wget https://github.com/glpi-project/glpi/releases/download/11.0.10/glpi-11.0.10.tgz
+sudo tar -xzvf glpi-11.0.10.tgz -C /var/www/
 
 # 1. Config -> /etc/glpi
 sudo mkdir -p /etc/glpi
@@ -44,7 +44,7 @@ sudo mv /var/www/glpi/files/* /var/lib/glpi/files/
 sudo mkdir -p /var/log/glpi
 
 # Permissions
-sudo chown -R www-data /var/www/glpi /etc/glpi /var/lib/glpi /var/log/glpi
+sudo chown -R www-data:www-data /var/www/glpi /etc/glpi /var/lib/glpi /var/log/glpi
 ```
 ## Liaison PHP (Downstream) pour indiquer à GLPI où trouver ses fichiers.
 ### Créer /var/www/glpi/inc/downstream.php
@@ -83,7 +83,7 @@ define('GLPI_LOG_DIR', '/var/log/glpi');
     CustomLog ${APACHE_LOG_DIR}/glpi_access.log combined
 </VirtualHost>
 ```
-## Configuration de php (/etc/php/8.2/fpm/php.ini)
+## Configuration de php (/etc/php/8.3/fpm/php.ini)
 ```ini
 session.cookie_httponly = on
 ```
@@ -92,7 +92,7 @@ session.cookie_httponly = on
 sudo a2dissite 000-default.conf
 sudo a2ensite glpi.conf
 sudo systemctl reload apache2
-systemctl restart php8.2-fpm.service
+systemctl restart php8.3-fpm.service
 ```
 ## Sécurisation Finale une fois l'installation Web terminée
 ```bash
@@ -103,8 +103,8 @@ sudo rm /var/www/glpi/install/install.php
 ```bash
 cd /tmp
 sudo apt install bzip2
-wget https://github.com/glpi-project/glpi-inventory-plugin/releases/download/1.3.5/glpi-glpiinventory-1.3.5.tar.bz2
-sudo tar -jxvf glpi-glpiinventory-1.3.5.tar.bz2 -C /var/www/glpi/plugins/
+wget https://github.com/glpi-project/glpi-inventory-plugin/releases/download/1.7.0/glpi-glpiinventory-1.7.0.tar.bz2
+sudo tar -jxvf glpi-glpiinventory-1.7.0.tar.bz2 -C /var/www/glpi/plugins/
 sudo chown -R www-data:www-data /var/www/glpi/plugins
 ```
 ## Procédure de Mise à Jour
@@ -125,8 +125,8 @@ sudo rm -rf /var/www/glpi/*
 #### Télécharger la nouvelle version et déploiment du nouveau code
 ```bash
 cd /tmp
-wget https://github.com/glpi-project/glpi/releases/download/10.0.20/glpi-10.0.20.tgz
-sudo tar -xzvf glpi-10.0.20.tgz -C /var/www/
+wget https://github.com/glpi-project/glpi/releases/download/11.0.11/glpi-11.0.11.tgz
+sudo tar -xzvf glpi-11.0.11.tgz -C /var/www/
 ```
 #### Restaurer le lien et les plugins
 ```bash

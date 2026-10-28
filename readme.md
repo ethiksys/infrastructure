@@ -23,6 +23,10 @@ Standardisation des déploiements.
   - [Gestion de l'inventaire](Automatisation/Ansible/02-Gestion_inventaire.md)
   - [Projet : Structure et exemple de playbook](Automatisation/Ansible/03-Structure_Projet_Playbook.md)
   - [Gestion des rôles](Automatisation/Ansible/04-Gestion_des_roles.md)
+- **Terraform** :
+  - [Installation Terraform](Automatisation/Terraform/01-Installation_Ubuntu.md)
+  - [Création de template cloud-init](Automatisation/Terraform/02-Creation_template_cloud-init.md)
+  - [Projet : Structure et exemple](Automatisation/Terraform/03-Structure_Projet_Terraform.md)
 - **Template** :
   - [Script Bash](Automatisation/Template/script-bash-template.md)
   - [Playbook Ansible](Automatisation/Template/playbook-template.yml)

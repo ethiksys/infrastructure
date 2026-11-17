@@ -37,7 +37,7 @@ CREATE DATABASE ma_base_db CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 CREATE USER 'mon_utilisateur'@'localhost' IDENTIFIED BY 'MonMDP123!';
 
 -- 3. Donner les droits
-GRANT ALL PRIVILEGES ON ma_base_db.* TO 'mon_user'@'localhost';
+GRANT ALL PRIVILEGES ON ma_base_db.* TO 'mon_utilisateur'@'localhost';
 
 -- 4. Appliquer les changements
 FLUSH PRIVILEGES;

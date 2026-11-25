@@ -1,7 +1,7 @@
 # Gitea - Installation (Ubuntu)
 
 ## Préparation du système
-### Mise à jour et dépendances (MariaDD choisi pour la gestion de la base de données)
+### Mise à jour et dépendances (MariaDB choisi pour la gestion de la base de données)
 ```bash
 sudo apt update && sudo apt full-upgrade -y
 sudo apt install git mariadb-server cosign -y 

@@ -38,6 +38,7 @@ Hardening système et gestion des flux.
   - [Gestion des clés SSH](SSH/Gestionclessh.md)
   - [Gestion de certificats SSL auto-signés/publics](Reseaux/GestionSSL.md)
   - [Gestion d'OpenVPN](Reseaux/OpenVPN.md)
+  - [Gestion des utilisateurs et groupes](Securite/Gestion_utilisateurs_linux.md)
 - **Réseau, Pare-feu & Filtrage** :
   - Gestion Reverse Proxy : [Nginx](Reseaux/ReverseProxy-LoadBalancing/Nginx.md), [Traefik](Reseaux/ReverseProxy-LoadBalancing/Traefik_v3.md)
   - Gestion Pare-feu : [iptables](Reseaux/Parefeu/Iptables.md), [ufw](Reseaux/Parefeu/ufw.md)

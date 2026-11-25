@@ -65,7 +65,7 @@ Gestion des outils en ligne de commande
 - Gestion du versionnage : [VsCode - Git](Outils/Git.md)
 - Editeurs de texte : [Vi - Vim](Outils/Vi_Vim.md)
 
-## 🧠 IA locale & Hardware Passthrough**
+## 🧠 IA locale & Hardware Passthrough
 Déploiement de solution d'IA locale
 
 - [Virtualisation GPU pour OpenWebUI (PCI Passthrough)](IA/OpenWebUI-serverGPU.md)

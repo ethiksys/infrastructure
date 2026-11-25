@@ -59,6 +59,12 @@ Déploiement et gestion de solutions autohébergés.
 - Serveur de mots de passe : [Passbolt](Services/Passbolt.md)
 - Forge Git : [Gitea](Services/Forge_Git/Gitea.md)
 
+## Outils en ligne de commandes
+Gestion des outils en ligne de commande
+
+- Gestion du versionnage : [VsCode - Git](Outils/Git.md)
+- Editeurs de texte : [Vi - Vim](Outils/Vi_Vim.md)
+
 ## 🧠 IA locale & Hardware Passthrough**
 Déploiement de solution d'IA locale
 

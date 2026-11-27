@@ -2,7 +2,7 @@
 
 ## 1. Génération des clés Ed25519 recommandé (Windows/Linux/Mac)
 ```
-ssh-keygen -t ed25519 "commentaire_ou_email"
+ssh-keygen -t ed25519 -C "commentaire_ou_email"
 ```
 ### Optionnel : RSA 4096 (Pour vieux systèmes incompatibles Ed25519)
 ```
